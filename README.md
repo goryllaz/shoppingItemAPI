@@ -25,6 +25,9 @@ Tento repozitář obsahuje jednoduchou RESTful API pro správu nákupních polo�
    ```bash
    npm start
 
+Server bude dostupný na `http://localhost:9000`.
+MongoDB bude dostupné na `mongodb://localhost:27017`
+
 ## Cesty API
 
 ### `GET /shoppingItem/list`
