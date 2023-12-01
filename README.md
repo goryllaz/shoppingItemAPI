@@ -59,7 +59,7 @@ Aktualizuje informace o nákupní položce.
 - `count`: Nový počet položek k zakoupení (číslo).
 - `state`: Nový stav položky (řetězec). (Např. CHECKED nebo UNCHECKED)
 
-### `DELETE /api/delete?id=:id`
+### `DELETE /shoppingItem/delete?id=:id`
 
 Odstraní nákupní položku ze seznamu.
 
