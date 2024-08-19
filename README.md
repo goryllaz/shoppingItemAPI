@@ -48,7 +48,7 @@ Přidá novou nákupní položku.
 - `count`: Počet položek k zakoupení (číslo).
 - `state`: Stav položky (řetězec). (Např. CHECKED nebo UNCHECKED)
 
-### `PUT /shoppingItem/update`
+### `POST /shoppingItem/update`
 
 Aktualizuje informace o nákupní položce.
 
@@ -59,7 +59,7 @@ Aktualizuje informace o nákupní položce.
 - `count`: Nový počet položek k zakoupení (číslo).
 - `state`: Nový stav položky (řetězec). (Např. CHECKED nebo UNCHECKED)
 
-### `DELETE /shoppingItem/delete?id=:id`
+### `POST /shoppingItem/delete?id=:id`
 
 Odstraní nákupní položku ze seznamu.
 

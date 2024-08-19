@@ -46,7 +46,7 @@ router.post("/create", async function (req, res) {
   }
 });
 
-router.put("/update", async function (req, res) {
+router.post("/update", async function (req, res) {
   const id = new mongoose.Types.ObjectId(req.body.id);
 
   try {
@@ -67,7 +67,7 @@ router.put("/update", async function (req, res) {
   }
 });
 
-router.delete("/delete", async function (req, res) {
+router.post("/delete", async function (req, res) {
   const id = new mongoose.Types.ObjectId(req.query.id);
 
   try {
