@@ -6,7 +6,14 @@ const ShoppingItem = require("../schemes/shoppingItem");
 router.get("/list", async function (req, res) {
   try {
     const shoppingItems = await ShoppingItem.find();
-    res.status(200).json(shoppingItems);
+    res.status(200).json({
+      itemList: shoppingItems,
+      pageInfo: {
+        pageIndex: 0,
+        pageSize: 1000,
+        total: shoppingItems.length,
+      },
+    });
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
